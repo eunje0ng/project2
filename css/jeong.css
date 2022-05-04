@@ -17,6 +17,7 @@ header {max-width: 100%; height: 90px; overflow: hidden; background-color: black
     max-width: 100%; height: 500px;
 }
 #main-slide-items {font-size: 0; display: flex;}
+#main-slide-items div {height: 100%;}
 .main-slide div:nth-child(1) {
     background: url("../img/main-slide1.jpg") no-repeat center / cover;
     height: 100%;
