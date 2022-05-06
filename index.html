@@ -1,208 +1,254 @@
- <!DOCTYPE html>
- <html lang="ko">
- <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>음악저널</title>
-     <link rel="stylesheet" href="css/jeong.css">
-     <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Gothic+A1+KR&display=swap" rel="stylesheet">
-     <script src="https://kit.fontawesome.com/7a40af6e56.js" crossorigin="anonymous"></script>
- </head>
- <body>
-     <header>
-         <h1 class="d-none">음악저널</h1>
-         <div class="header-wrap">
-             <div class="logo"><img src="img/logo.png" alt="음악저널"></div>
-             <div class="nav">
-                 <ul class="gnb">
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7a40af6e56.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1+KR&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/jeong.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <title>음악저널</title>
+    <script>
+        $(document).ready(function(){
+          $('.main-slide').bxSlider({
+              auto: true,
+              mode: 'horizontal',
+              pager: true,
+          });
+        });
+      </script>
+</head>
+<body>
+    <header>
+        <h1 class="d-none">음악저널</h1>
+        <div class="header-wrap">
+            <div class="logo"><img src="img/logo.png" alt="음악저널"></div>
+            <div class="nav">
+                <ul class="gnb">
                     <li><a href="#">음악저널</a>
-                        <ul class="lnb">
-                            <li><a href="#">소개</a></li>
-                            <li><a href="#">연혁</a></li>
-                            <li><a href="#">대표인사말</a></li>
-                            <li><a href="#">contact</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">인터뮤직</a>
-                        <ul class="lnb">
-                            <li><a href="#">인터뮤직</a></li>
-                            <li><a href="#">대관일정</a></li>
-                            <li><a href="#">연주회자료실</a></li>
-                            <li><a href="#">아티스트</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">매거진</a>
-                        <ul class="lnb">
-                            <li><a href="#">매거진</a></li>
-                            <li><a href="#">주요기사</a></li>
-                            <li><a href="#">구독/광고</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">저널기획</a>
-                        <ul class="lnb">
-                            <li><a href="#">신인음악상</a></li>
-                            <li><a href="#">음악저널콩쿠르</a></li>
-                            <li><a href="#">음악저널오디션</a></li>
-                            <li><a href="#">프로그램공모</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">커뮤니티</a>
-                        <ul class="lnb">
-                            <li><a href="#">공지사항</a></li>
-                            <li><a href="#">질문과답변</a></li>
-                            <li><a href="#">음악계제보</a></li>
-                            <li><a href="#">등업요청</a></li>
-                            <li><a href="#">유럽데뷔연주</a></li>
-                        </ul>
-                    </li>
-                 </ul>
-             </div>
-             <div class="member">
-                 <ul>
-                    <li><a href="#"><img src="img/login.png" alt="로그인"></a></li>
-                    <li><a href="#"><img src="img/register.png" alt="회원가입"></a></li>
-                 </ul>
-             </div>
-         </div>
-        </header>
-        <div class="main-slide">
-            <div id="main-slide-items">
-                <div><a href="#"></a></div>
-                <div><a href="#"></a></div>
-                <div><a href="#"></a></div>
+                        <div class="lnb-bg"></div>
+                       <ul class="lnb">
+                           <li><a href="#">소개</a></li>
+                           <li><a href="#">연혁</a></li>
+                           <li><a href="#">대표인사말</a></li>
+                           <li><a href="#">contact</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">인터뮤직</a>
+                       <ul class="lnb">
+                           <li><a href="#">인터뮤직</a></li>
+                           <li><a href="#">대관일정</a></li>
+                           <li><a href="#">연주회자료실</a></li>
+                           <li><a href="#">아티스트</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">매거진</a>
+                       <ul class="lnb">
+                           <li><a href="#">매거진</a></li>
+                           <li><a href="#">주요기사</a></li>
+                           <li><a href="#">구독/광고</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">저널기획</a>
+                       <ul class="lnb">
+                           <li><a href="#">신인음악상</a></li>
+                           <li><a href="#">음악저널콩쿠르</a></li>
+                           <li><a href="#">음악저널오디션</a></li>
+                           <li><a href="#">프로그램공모</a></li>
+                       </ul>
+                   </li>
+                   <li><a href="#">커뮤니티</a>
+                       <ul class="lnb">
+                           <li><a href="#">공지사항</a></li>
+                           <li><a href="#">질문과답변</a></li>
+                           <li><a href="#">음악계제보</a></li>
+                           <li><a href="#">등업요청</a></li>
+                           <li><a href="#">유럽데뷔연주</a></li>
+                       </ul>
+                   </li>
+                </ul>
+            </div>
+            <div class="member">
+                <ul>
+                   <li><a href="#"><img src="img/login.png" alt="로그인"></a></li>
+                   <li><a href="#"><img src="img/register.png" alt="회원가입"></a></li>
+                </ul>
             </div>
         </div>
-     <section>
-         <div id="article1">
-             <div class="music-news">
-                 <div class="music-news-title">
-                     <h2><a href="#">예술계 뉴스</a></h2>
-                     <a href="#"><i class="fa-regular fa-circle-plus"></i></a>
-                 </div>
-                 <div class="music-news-text">
-                     <div class="music-news-img">
-                         <img src="img/news1.jpg" alt="">유진 살토리 바이올린 활 경매
-                         <img src="img/news2.jpg" alt="">'피아니스트'라두루프 타계
-                         <img src="img/news3.jpg" alt="">2022 위그모어홀 콩쿠르 개최
-                     </div>
-                     <ul class="music-news-list">
-                         <li><a href="#">조성진, 영국 에든버러 인터내셔널 페스티벌에 초청</a></li>
-                         <li><a href="#">벨기에 한국문화원, 정기 콘서트 재개!</a></li>
-                         <li><a href="#">거리두기 해제... 공연 관객 수 제한 풀린다</a></li>
-                         <li><a href="#">코리안심포니, ‘국립심포니오케스트라’로 명칭 변경</a></li>
-                     </ul>
-                 </div>
-             </div>
-             <div class="music-info">
-                 <div class="music-info-title">
-                     <h2><a href="#">공연 정보</a></h2>
-                     <a href="#"><i class="fa-regular fa-circle-plus"></i></a>
-                 </div>
-                 <div class="music-info-text">
-                     <div class="music-info-img">
-                         <img src="img/news1.jpg" alt="">유진 살토리 바이올린 활 경매
-                         <img src="img/news2.jpg" alt="">'피아니스트'라두루프 타계
-                         <img src="img/news3.jpg" alt="">2022 위그모어홀 콩쿠르 개최
-                     </div>
-                     <ul class="music-info-list">
-                         <li><a href="#">조성진, 영국 에든버러 인터내셔널 페스티벌에 초청</a></li>
-                         <li><a href="#">벨기에 한국문화원, 정기 콘서트 재개!</a></li>
-                         <li><a href="#">거리두기 해제... 공연 관객 수 제한 풀린다</a></li>
-                         <li><a href="#">코리안심포니, ‘국립심포니오케스트라’로 명칭 변경</a></li>
-                     </ul>
-                 </div>
-             </div>
-         </div>
-         <div id="article2">
-             <h2>작은우리</h2>
-             <p>도서출판 작은우리 단행본 소개</p>
-             <div class="book-promotion">
-                 <div class="swhiper">
-                     <div class="swhiper-wrap">
-                         <div class="swhiper-slide">
-                             <img src="img/book1.jpg" alt="">
-                             <a href="javascript:void(0)" class="btn">구매하기</a>
-                         </div>
-                         <div class="swhiper-slide">
-                             <img src="img/book2.jpg" alt="">
-                             <a href="javascript:void(0)" class="btn">구매하기</a>
-                         </div>
-                         <div class="swhiper-slide">
-                             <img src="img/book3.jpg" alt="">
-                             <a href="javascript:void(0)" class="btn">구매하기</a>
-                         </div>
-                         <div class="swhiper-slide">
-                             <img src="img/book4.jpg" alt="">
-                             <a href="javascript:void(0)" class="btn">구매하기</a>
-                         </div>
-                         <div class="swhiper-slide">
-                             <img src="img/book5.jpg" alt="">
-                             <a href="javascript:void(0)" class="btn">구매하기</a>
-                         </div>
-                         <div class="swhiper-slide">
-                             <img src="img/book6.jpg" alt="">
-                             <a href="javascript:void(0)" class="btn">구매하기</a>
-                         </div>
-                         <div class="swhiper-slide">
-                             <img src="img/book7.jpg" alt="">
-                             <a href="javascript:void(0)" class="btn">구매하기</a>
-                         </div>
-                     </div>
-                 </div>
-                 <div class="swiper-pagination"></div>
-                 <div class="swiper-prev">
-                     <div class="material-icons">arrow_back</div>
-                 </div>
-                 <div class="swiper-next">
-                     <div class="material-icons">arrow_forward</div>
-                 </div>
-             </div>
-         </div>
-         <div id="article3">
-             <h2>음악저널 서비스</h2>
-             <div class="service">
-                 <div class="service1">
-                     <h2>인터뮤직</h2>
-                     <p><i class="fa-regular fa-circle-plus"></i></p>
-                 </div>
-                 <div class="service2">
-                    <h2>매거진</h2>
+       </header>
+       <ul class="main-slide">
+           <li class="main-slide1"><a href="#"></a></li>
+           <li class="main-slide2"><a href="#"></a></li>
+           <li class="main-slide3"><a href="#"></a></li>
+        </ul>
+    <section>
+        <div id="article1">
+            <div class="music-news">
+                <div class="music-news-title">
+                    <h2><a href="#">예술계 뉴스</a></h2>
+                    <a href="#" class="more"><img src="img/plus-gray.png" alt=""></a>
+                </div>
+                <div class="music-news-text">
+                    <div class="music-news-img">
+                        <a href="#"><img src="img/news1.jpg" alt="유진 살토리 바이올린 활 경매"></a>
+                        <a href="#"><img src="img/news2.jpg" alt="'피아니스트'라두루프 타계"></a>
+                        <a href="#"><img src="img/news3.jpg" alt="2022 위그모어홀 콩쿠르 개최"></a>
+                    </div>
+                    <div class="music-news-list-wrap">
+                        <ul class="music-news-list">
+                            <li><a href="#">'유진 살토리' 바이올린 활 경매 개최</a></li>
+                            <li><a href="#">'피아니스트들의 우상' 라두 루프 타계</a></li>
+                            <li><a href="#">2022위그모어홀 국제 현악사중주 콩쿠르</a></li>
+                        </ul>
+                        <ul class="news-date">
+                            <li>2022.05.02</li>
+                            <li>2022.05.01</li>
+                            <li>2022.04.30</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="music-news">
+                <div class="music-news-title">
+                    <h2><a href="#">공연 소식</a></h2>
+                    <a href="#" class="more"><img src="img/plus-gray.png" alt=""></a>
+                </div>
+                <div class="music-news-text">
+                    <div class="music-news-img">
+                        <a href="#"><img src="img/news1.jpg" alt="유진 살토리 바이올린 활 경매"></a>
+                        <a href="#"><img src="img/news2.jpg" alt="'피아니스트'라두루프 타계"></a>
+                        <a href="#"><img src="img/news3.jpg" alt="2022 위그모어홀 콩쿠르 개최"></a>
+                    </div>
+                    <div class="music-news-list-wrap">
+                        <ul class="music-news-list">
+                            <li><a href="#">'유진 살토리' 바이올린 활 경매 개최</a></li>
+                            <li><a href="#">'피아니스트들의 우상' 라두 루프 타계</a></li>
+                            <li><a href="#">2022위그모어홀 국제 현악사중주 콩쿠르</a></li>
+                        </ul>
+                        <ul class="news-date">
+                            <li>2022.05.02</li>
+                            <li>2022.05.01</li>
+                            <li>2022.04.30</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="article2">
+            <h2>작은우리</h2>
+            <p>도서출판 작은우리 단행본 소개</p>
+            <div class="promotion">
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="img/book1.png" alt="">
+                            <a href="javascript:void(0)" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/book2.png" alt="">
+                            <a href="javascript:void(0)" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/book3.png" alt="">
+                            <a href="javascript:void(0)" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/book4.png" alt="">
+                            <a href="javascript:void(0)" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/book5.png" alt="">
+                            <a href="javascript:void(0)" class="btn">구매하기</a>
+                        </div>
+                        <div class="swhiper-slide">
+                            <img src="img/book6.png" alt="">
+                            <a href="javascript:void(0)" class="btn">구매하기</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="img/book7.png" alt="">
+                            <a href="javascript:void(0)" class="btn">구매하기</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-prev">
+                    <div class="material-icons"><img src="img/left.png" alt=""></div>
+                </div>
+                <div class="swiper-next">
+                    <div class="material-icons"><img src="img/right.png" alt=""></div>
+                </div>
+            </div>
+        </div>
+        <div id="article3">
+            <h2>음악저널 서비스</h2>
+            <div class="service">
+                <div class="service1">
+                    <h2>인터뮤직</h2>
                     <p><i class="fa-regular fa-circle-plus"></i></p>
-                 </div>
-                 <div class="service3">
-                    <h2>저널기획</h2>
-                    <p><i class="fa-regular fa-circle-plus"></i></p>
-                 </div>
-                 <div class="service4">
-                    <h2>커뮤니티</h2>
-                    <p><i class="fa-regular fa-circle-plus"></i></p>
-                 </div>
-             </div>
-         </div>
-     </section>
-     <footer>
-         <div class="footer-wrap">
-             <div class="logo2"><a href="#"><img src="img/logo_ft.png" alt=""></a></div>
-             <div class="footer-info">
-                 <div class="xnb">
-                     <ul>
-                         <li><a href="#">개인정보취급방침</a></li>
-                         <li><a href="#">이용약관</a></li>
-                         <li><a href="#">이메일무단수집거부</a></li>
-                     </ul>
-                 </div>
-                 <address>
-                    상호:음악저널 , 대표자:이홍경 , 사업자등록번호:482-88-01140<br>
-                    주소:서울시 서초구 바우뫼로 11인길 25 101호 , TEL:02.2235.8955~6 , FAX:02.2237.6185
-                 </address>
-                 <p>copyright &copy; 2016 by음악저널 all rights reserved.</p>
-             </div>
-         </div>
-     </footer>
-    <script src="js/main.js"></script>
- </body>
- </html>
+                </div>
+                <div class="service2">
+                   <h2>매거진</h2>
+                   <p><i class="fa-regular fa-circle-plus"></i></p>
+                </div>
+                <div class="service3">
+                   <h2>저널기획</h2>
+                   <p><i class="fa-regular fa-circle-plus"></i></p>
+                </div>
+                <div class="service4">
+                   <h2>커뮤니티</h2>
+                   <p><i class="fa-regular fa-circle-plus"></i></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-wrap">
+            <div class="logo2"><a href="#"><img src="img/logo_ft.png" alt=""></a></div>
+            <div class="footer-info">
+                <div class="xnb">
+                    <ul>
+                        <li><a href="#">개인정보취급방침</a></li>
+                        <li><a href="#">이용약관</a></li>
+                        <li><a href="#">이메일무단수집거부</a></li>
+                    </ul>
+                </div>
+                <address>
+                   상호:음악저널 , 대표자:이홍경 , 사업자등록번호:482-88-01140<br>
+                   주소:서울시 서초구 바우뫼로 11인길 25 101호 , TEL:02.2235.8955~6 , FAX:02.2237.6185
+                </address>
+                <p>copyright &copy; 2016 by음악저널 all rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+   <script src="js/main.js"></script>
+   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+   <script>
+    new Swiper('.promotion .swiper', {
+        slidesPerView: 3, //한 번에 보여줄 슬라이드 개수
+        spaceBetween: 10, //슬라이드 사이 여백
+        centeredSlides: true, //1번 슬라이드가 가운데 보이기
+        // loop: true,
+        autoplay: {
+            delay: 1500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: '.promotion .swiper-pagination', //페이지 번호 요소 선택자
+            clickable: true //사용자의 페이지 번호 요소 제어
+        },
+        navigation: {
+            prevEl: '.promotion .swiper-prev',
+            nextEl: '.promotion .swiper-next'
+        },
+    });
+  </script>
+</body>
+</html>
