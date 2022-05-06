@@ -1,5 +1,5 @@
 @charset "utf-8";
-body {font-family: 'Gothic A1', sans-serif; color: #666; margin: 0; padding: 0;}
+body {font-family: 'Gothic A1', sans-serif; color: #555; margin: 0; padding: 0;}
 ul {list-style: none; margin: 0; padding: 0;}
 a, a:link {text-decoration: none; color:inherit;}
 .d-none {display: none;}
@@ -50,7 +50,7 @@ section {width: 1100px; margin: 0 auto; overflow: hidden; padding-top: 50px;}
     justify-content: space-between; align-items: flex-end;
     border-bottom: 1px solid #999; padding-bottom: 20px;
 }
-#article1 h2 {font-size: 2.5rem; font-weight: bold;}
+#article1 h2 {font-size: 2.1rem; font-weight: bold;}
 .more img {width: 30px;}
 .music-news-img {display: flex; justify-content: space-around; column-gap: 10px;}
 .music-news-img img {width: calc(500px / 3 - 10px); height: 110px; margin: 20px 0;}
@@ -87,3 +87,30 @@ section {width: 1100px; margin: 0 auto; overflow: hidden; padding-top: 50px;}
 .swiper-prev {left: 50%; margin-left: -480px;}
 .swiper-next {right: 50%; margin-right: -480px;}
 .swiper-prev:hover, .swiper-next:hover {background: #333; color: white;}
+
+#article3, #article2 {margin-top: 80px;}
+#article3 h2, #article2 h2 {text-align: center; font-size: 2.1rem; font-weight: bolder;}
+#article3 h4, #article2 h4 {
+    text-align: center; text-transform: uppercase; margin-bottom: 50px;
+    margin-top: 10px; font-size: 1.27rem; color: #888;
+}
+.service {display: flex; justify-content: space-around; text-align: center;}
+.service div {width: calc(1100px / 4 - 10px); height: 378px; border-radius: 20px;}
+.service1 {background: url("../img/service1.png");}
+.service2 {background: url("../img/service2.png");}
+.service3 {background: url("../img/service3.png");}
+.service4 {background: url("../img/service4.png");}
+.service h3 {
+    font-size: 1.7rem; color: white; font-weight: bold;
+    padding-top: 30%; text-shadow: #333 3px 3px 3px;
+}
+.service img {margin-top: 50%; width: 60px; opacity: 0;}
+.service div:hover img {transform: scale(1.3); transition: all .3s ease-in-out; opacity: 1;}
+.service div:hover {margin-top: -20px; transition: all .3s ease-in-out;}
+
+footer {width: 100%; background: rgb(0, 0, 0); margin-top: 100px; color: white;}
+.footer-wrap {display: flex; width: 1100px; margin: 0 auto; 
+    justify-content: space-between; padding: 30px 0;}
+.xnb ul {display: flex; column-gap: 50px; margin-bottom: 20px;}
+address {font-size: 0.8em; line-height: 20px; text-transform: uppercase;}
+.logo2 img {width: 120px;}
