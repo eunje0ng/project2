@@ -25,8 +25,9 @@ header {max-width: 100%; height: 90px; border-bottom: 1px solid #999;}
 .member img {width: 20px}
 header {position: fixed; width: 100%; z-index: 1000000; background-color: white;}
 
-.topper {position: fixed; bottom: 0; right: 0;margin: 0 40px 40px 0;}
-.topper img {width: 50px; box-shadow: 2px 2px 5px; border-radius: 50%;}
+.topper {position: fixed; bottom: 0; right: 0;margin: 0 40px 40px 0;
+    background: white; border-radius: 40px; border: 4px solid white;}
+.topper img {width: 50px;}
 
 .main-slide {height: 500px; margin-top: 90px;}
 .main-slide1 {
@@ -92,7 +93,7 @@ header {position: fixed; width: 100%; z-index: 1000000; background-color: white;
 .swiper-pagination {position: static; margin-top: 30px;}
 
 #article3, #article2, #article1 {margin-top: 80px;}
-#article3 {padding-top: 40px;}
+#article3 {padding-top: 40px; margin-bottom: 140px;}
 #article2 {margin-top: 120px;}
 #article3 h2, #article2 h2 {text-align: center; font-size: 2.1rem; font-weight: bolder;}
 #article3 h4, #article2 h4 {
@@ -113,9 +114,81 @@ header {position: fixed; width: 100%; z-index: 1000000; background-color: white;
 .service div:hover img {transform: scale(1.3); transition: all .3s ease-in-out; opacity: 1;}
 .service div:hover {margin-top: -20px; transition: all .3s ease-in-out;}
 
-footer {width: 100%; background: rgb(0, 0, 0); margin-top: 140px; color: white;}
+footer {width: 100%; background: rgb(0, 0, 0); color: white;}
 .footer-wrap {display: flex; width: 1100px; margin: 0 auto; 
     justify-content: space-between; padding: 30px 0;}
 .xnb ul {display: flex; column-gap: 50px; margin-bottom: 20px;}
 address {font-size: 0.8em; line-height: 20px; text-transform: uppercase;}
 .logo2 img {width: 120px;}
+
+/* ==커뮤니티========================+================================================================= */
+.hero {background: url("../img/hero1.jpg") no-repeat center / cover; height: 400px; overflow: hidden;}
+.hero-text {width: 1100px; margin: 0 auto; text-align: center; color: white; margin-top: 160px; line-height: 3.5rem;}
+.hero-text h2 {text-transform: uppercase; font-size: 1rem;}
+.hero-text h3 {font-size: 3rem; font-weight: bolder;}
+.sub-menu {border-bottom: 1px solid #999; height: 50px;}
+.sub-menu-wrap {width: 1100px; margin: 0 auto; display: flex; line-height: 50px; justify-content: space-between;}
+.sub-menu-wrap-wrap {display: flex; column-gap: 30px;}
+
+.cm-article1 {width: 1100px; margin: 100px auto; height: 200px; border-radius: 20px;
+    text-align: center; box-shadow: 0 0 8px rgba(0, 0, 0, 0.219);}
+.cm-article1 h2 {text-transform: uppercase; font-size: 3rem; font-weight: bold; padding-top: 2rem;}
+.cm-article1 input {width: 500px; height: 50px; margin-top: 20px; border: 1px solid white; border-radius: 5px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.219);}
+.cm-article1 button {width: 56px; height: 56px; border: 0; background: tan; border-radius: 5px; box-shadow: 0 0 4px rgba(0, 0, 0, 0.219);}
+.cm-article1 {margin-bottom: 50px;}
+
+.cm-article2 {width: 1100px; margin: 0 auto; display: flex; justify-content: space-between;}
+.cm-news {box-shadow: 0 0 4px rgba(0, 0, 0, 0.219); border-radius: 10px;
+    height: 400px; width: calc(1100px / 3 - 30px); position: relative;}
+.cm-news-title {
+    width: 280px; margin: 30px auto; padding-bottom: 10px;
+    display: flex; justify-content: space-between;
+    border-bottom: 1px solid #999;
+}
+.cm-news-title h2 {font-size: 2rem; font-weight: bold;}
+.cm-news-title img {width: 35px;}
+.cm-news ul {width: 280px; margin: 0 auto; list-style: decimal inside; line-height: 2rem;}
+.cm-news li {font-size: smaller;}
+.cm-img {position: absolute; left: 50%; bottom: 8%; transform: translate(-50%); opacity: 70%;}
+.cm-news:hover img {transform: scale(1.2); transition: all .3s;}
+.cm-news:hover {background: rgba(210, 180, 140, 0.349); transition: all .3s;}
+
+.cm-article3 {background: #9287873a; margin-top: 100px; padding: 20px 0; padding-bottom: 100px;}
+.cm-article3-wrap {width: 1100px; margin: 0 auto; display: flex; height: 50px; align-items: center; margin-top: 30px;}
+.cm-article3-wrap h2 {font-size: 2rem; font-weight: bolder;}
+.cm-article3-wrap hr {width: 700px; height: 1px; border: 0; background-color: #999;}
+.cm-article3-wrap p {font-weight: bold;}
+
+.box-wrap {width: 1100px; margin: 20px auto; overflow: hidden; margin-top: 30px;}
+#box {float: left; width: 540px; height: auto;}
+.boxing {margin-bottom: 20px;}
+.box-margin {margin-right: 20px;}
+.box-img {margin-bottom: 10px; overflow: hidden; width: 540px;}
+.box-text {background:white; width: 540px; overflow: hidden;}
+.text-wrap {padding: 20px; line-height: 30px;}
+.box-text h2 {background-color: #d2b010; display: inline; color: white; padding: 3px 10px; vertical-align: middle;}
+.box-text h3 {font-size: 1.2rem; margin-top: 10px; font-weight: 600;}
+.box-text p {font-size: 0.8rem; color: #666;}
+#box a:hover img {transform: scale(1.1); transition: all 0.4s;}
+
+/* ==매거진++++=========================================================================================== */
+.hero2 {background: url("../img/hero2.jpg") no-repeat center / cover; height: 400px; overflow: hidden;}
+.ma-article1-wrap {background: #9287873a; padding: 90px 0; margin-bottom: 80px;}
+.ma-article1 {width: 1100px; margin: 0px auto; overflow: hidden;
+    display: flex; column-gap: 40px; height: 688px;}
+.month img {width: 500px;}
+.month-text {height: 100%;}
+.month-text h2 {font-size: 2rem; font-weight: bold; text-transform: uppercase; line-height: 2.5rem;}
+.month-text hr {margin: 20px 0;}
+.month-text h3 {font-size: 1rem; font-weight: bolder;}
+.month-text p {font-size: 0.8em; line-height: 2rem; margin-bottom: 2rem;}
+.month-text h4 {font-size: 2rem; text-align: center; color: #999;}
+
+.ma-article2 {width: 1100px; margin: 20px auto; display: flex; 
+    justify-content: space-between;}
+.ma-article2 img {width: 200px;}
+.ma-article2 ul {line-height: 1.3rem; font-size: 0.8em;}
+.ma-article2 li {text-align: center;}
+
+.ma-paging {text-align: center;}
+.ma-paging img {width: 300px; margin: 30px 0; margin-bottom: 100px;}
