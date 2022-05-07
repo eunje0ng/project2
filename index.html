@@ -83,12 +83,13 @@
                 </ul>
             </div>
         </div>
-       </header>
+    </header>
        <ul class="main-slide">
            <li class="main-slide1"><a href="#"></a></li>
            <li class="main-slide2"><a href="#"></a></li>
            <li class="main-slide3"><a href="#"></a></li>
         </ul>
+        <div class="topper"><a href="#"><img src="img/topper.png" alt="상단으로"></a></div>
     <section>
         <div id="article1">
             <div class="music-news">
@@ -144,46 +145,44 @@
         </div>
         <div id="article2">
             <h2>작은우리</h2>
-            <h4>도서출판 작은우리 단행본 소개</h4>
-            <div class="promotion">
-                <div class="swiper">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide">
-                            <img src="img/book1.png" alt="">
-                            <a href="javascript:void(0)" class="btn">구매하기</a>
+            <h4>도서출판 작은우리 단행본</h4>
+            <div class="promotion-wrap">
+                <div class="promotion">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide"><a href="#">
+                                <img src="img/book1.png" alt="" class="book-top">
+                                <img src="img/book-overlay.png" alt="" class="book-under">
+                          </a></div>
+                          <div class="swiper-slide"><a href="#">
+                                <img src="img/book2.png" alt="" class="book-top">
+                                <img src="img/book-overlay.png" alt="" class="book-under">
+                          </a></div>
+                          <div class="swiper-slide"><a href="#">
+                                <img src="img/book3.png" alt="" class="book-top">
+                                <img src="img/book-overlay.png" alt="" class="book-under">
+                          </a></div>
+                          <div class="swiper-slide"><a href="#">
+                                <img src="img/book4.png" alt="" class="book-top">
+                                <img src="img/book-overlay.png" alt="" class="book-under">
+                          </a></div>
+                          <div class="swiper-slide"><a href="#">
+                                <img src="img/book5.png" alt="" class="book-top">
+                                <img src="img/book-overlay.png" alt="" class="book-under">
+                          </a></div>
+                          <div class="swiper-slide"><a href="#">
+                                <img src="img/book6.png" alt="" class="book-top">
+                                <img src="img/book-overlay.png" alt="" class="book-under">
+                          </a></div>
+                          <div class="swiper-slide"><a href="#">
+                                <img src="img/book7.png" alt="" class="book-top">
+                                <img src="img/book-overlay.png" alt="" class="book-under">
+                          </a></div>
                         </div>
-                        <div class="swiper-slide">
-                            <img src="img/book2.png" alt="">
-                            <a href="javascript:void(0)" class="btn">구매하기</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/book3.png" alt="">
-                            <a href="javascript:void(0)" class="btn">구매하기</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/book4.png" alt="">
-                            <a href="javascript:void(0)" class="btn">구매하기</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/book5.png" alt="">
-                            <a href="javascript:void(0)" class="btn">구매하기</a>
-                        </div>
-                        <div class="swhiper-slide">
-                            <img src="img/book6.png" alt="">
-                            <a href="javascript:void(0)" class="btn">구매하기</a>
-                        </div>
-                        <div class="swiper-slide">
-                            <img src="img/book7.png" alt="">
-                            <a href="javascript:void(0)" class="btn">구매하기</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-prev">
-                    <div class="material-icons"><img src="img/left.png" alt=""></div>
-                </div>
-                <div class="swiper-next">
-                    <div class="material-icons"><img src="img/right.png" alt=""></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
                 </div>
             </div>
         </div>
@@ -240,24 +239,23 @@
    <script src="js/main.js"></script>
    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
    <script>
-    new Swiper('.promotion .swiper', {
-        slidesPerView: 3, //한 번에 보여줄 슬라이드 개수
-        spaceBetween: 10, //슬라이드 사이 여백
-        centeredSlides: true, //1번 슬라이드가 가운데 보이기
-        // loop: true,
+      var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 3,
+        spaceBetween: 150,
+        // centeredSlides: true,
         autoplay: {
-            delay: 1500,
-            disableOnInteraction: false,
+          delay: 2500,
+          disableOnInteraction: false,
         },
         pagination: {
-            el: '.promotion .swiper-pagination', //페이지 번호 요소 선택자
-            clickable: true //사용자의 페이지 번호 요소 제어
+          el: ".swiper-pagination",
+          clickable: true,
         },
         navigation: {
-            prevEl: '.promotion .swiper-prev',
-            nextEl: '.promotion .swiper-next'
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
         },
-    });
+      });
   </script>
 </body>
 </html>
