@@ -19,8 +19,10 @@ header {max-width: 100%; height: 90px; border-bottom: 1px solid #999;}
     font-size: 0.8em; line-height: 50px;}
 .lnb li {width: 130px;}
 .lnb > li:hover {color: #d2b48c;}
-.lnb-bg {background: #000000be; z-index: 100000; display: none;
+.lnb-bg {background: #000000d3; z-index: 100000; display: none;
     width: 100%; height: 250px; position: absolute; left: 0; border-bottom: 1px solid rgba(255, 255, 255, 0.603);}
+.gnb:hover .lnb {display: block; transition: all .3s;}
+.gnb:hover .lnb-bg {display: block;}
 .member ul {display: flex; column-gap: 1rem;}
 .member img {width: 20px}
 header {position: fixed; width: 100%; z-index: 1000000; background-color: white;}
@@ -154,7 +156,7 @@ address {font-size: 0.8em; line-height: 20px; text-transform: uppercase;}
 .cm-news:hover {background: rgba(210, 180, 140, 0.349); transition: all .3s;}
 
 .cm-article3 {background: #9287873a; margin-top: 100px; padding: 20px 0; padding-bottom: 100px;}
-.cm-article3-wrap {width: 1100px; margin: 0 auto; display: flex; height: 50px; align-items: center; margin-top: 30px;}
+.cm-article3-wrap {width: 1100px; margin: 0 auto; display: flex; height: 50px; align-items: center; margin-top: 40px;}
 .cm-article3-wrap h2 {font-size: 2rem; font-weight: bolder;}
 .cm-article3-wrap hr {width: 700px; height: 1px; border: 0; background-color: #999;}
 .cm-article3-wrap p {font-weight: bold;}
