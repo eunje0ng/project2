@@ -194,3 +194,8 @@ address {font-size: 0.8em; line-height: 20px; text-transform: uppercase;}
 
 .ma-paging {text-align: center;}
 .ma-paging img {width: 300px; margin: 30px 0; margin-bottom: 100px;}
+
+/* ===반응형============================================================================ */
+@media screen and (max-width:425px) {
+body {max-width: 100%; margin: 0 auto;}
+}
